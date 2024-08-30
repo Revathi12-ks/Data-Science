@@ -1,0 +1,32 @@
+SQUARE MATRIX OF RANDOM
+
+import numpy as np
+n=np.random.randint(10,size=(2,2))
+print(n)
+
+print("determinant")
+print(np.linalg.det(n))
+
+print("inverse")
+print(np.linalg.inv(n))
+
+print("matrix Rank")
+print(np.linalg.matrix_rank(n))
+
+print("1d array")
+print(n.flatten())
+
+
+OUTPUT
+
+[[5 1]
+ [0 1]]
+determinant
+4.999999999999999
+inverse
+[[ 0.2 -0.2]
+ [ 0.   1. ]]
+matrix Rank
+2
+1d array
+[5 1 0 1]
